@@ -64,6 +64,8 @@ if [[ -n ${KEYCLOAK_HOSTNAME:-} ]]; then
     fi
 fi
 
+SYS_PROPS+=" -Dkeycloak.profile.feature.scripts=enabled"
+
 ################
 # Realm import #
 ################
