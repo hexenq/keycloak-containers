@@ -50,7 +50,7 @@ fi
 
 mkdir -p /opt/jboss/keycloak/modules/system/layers/base/com/mysql/jdbc/main
 cd /opt/jboss/keycloak/modules/system/layers/base/com/mysql/jdbc/main
-curl -O http://central.maven.org/maven2/mysql/mysql-connector-java/$JDBC_MYSQL_VERSION/mysql-connector-java-$JDBC_MYSQL_VERSION.jar
+curl -L -O http://central.maven.org/maven2/mysql/mysql-connector-java/$JDBC_MYSQL_VERSION/mysql-connector-java-$JDBC_MYSQL_VERSION.jar
 cp /opt/jboss/tools/databases/mysql/module.xml .
 
 mkdir -p /opt/jboss/keycloak/modules/system/layers/base/org/postgresql/jdbc/main
